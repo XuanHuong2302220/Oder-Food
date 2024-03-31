@@ -11,7 +11,7 @@ function App() {
         return (
           <Route
             path={pub.path}
-            element={<Layout>{pub.element}</Layout>}
+            element={pub.path == '/login' || '/register' ?pub.element :<Layout>{pub.element}</Layout>}
             key={pub.path}
           />
         );

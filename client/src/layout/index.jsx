@@ -7,7 +7,7 @@ import Header from '../components/Header'
 export default function Layout({children}) {
   return (
    <Box>
-        <Header />
+        <Header/>
         {children}
         <Footer />
    </Box>
